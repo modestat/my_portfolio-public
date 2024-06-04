@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#assignments">Assignments</a></li>
+                <li><a href="reflection.html">Reflections</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h2>Assignment 3: BEM Methodology</h2>
+        <a class="assigment__link" href="https://advancedcss2024.github.io/idg1292-2024-oblig3-group04/">Link to Original Assigment 3</a>
+        <p>The main issues with Assignment 3 included a lack of titles, insufficient emphasis on key text, and the need for more engaging interactions and 
+            animations.
+        </p>
+        <h3>Main Contributions:</h3>
+        <p> My main contributions to Assigment 3 were:</p>
+        <ul>
+            <li>
+                <p>Recreating scenes 5-8</p>
+            </li>
+            <li>
+                <p>
+                    Adding reduced motion to all animations 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Animating boats
+                </p>
+            </li>
+            <li>
+                <p>
+                    Applying text throughout the whole story
+                </p>
+            </li>
+            <li>
+                <p>
+                    Adding the IDG12 logo
+                </p>
+            </li>
+        </ul>
+
+        <h4>Improvements:</h4>
+        <ul>
+            <li><p>
+                   Titles and Emphasized Text: Added clear titles to each slide for better context and understanding. 
+                  Enhanced the text detailing CO2 consumption and environmental impact from scenes 3 to 7.
+               </p>
+           </li>
+            <li>
+                <p>
+                    Interactions: Added more boats and interactions on the world map scene to illustrate global transportation impact.
+                </p>
+            </li>
+            <li>
+                <p>
+                  Animations: Fixed and refined animations for smoother and more engaging visual effects.
+                </p>
+            </li>
+        </ul>
+
+        
+        <p>During the review and enhancement of my code for Assignment 3, I identified several instances of redundant code, particularly within the sections 
+            where I formatted paragraphs for stories. 
+            Each section repeatedly defined properties like position: absolute, font-size, color, and z-index. To streamline this, I introduced a common class, 
+            .scene__text, to encapsulate these shared properties. 
+            The implementation is as follows:</p>  
+            <img class="section__image" src="../assets/images/oblig3__inheritance.png" alt="">
+        <p>This modification reduced the redundancy in CSS a bit, ensuring that all paragraphs within these sections inherit the common styling 
+            properties from the .scene__text class.</p>
+        <p>Additionally, I noticed that some paragraphs lacked class names and were instead being targeted through selectors like .section-nine__para > p. 
+            To address this, I assigned specific class names to these paragraphs, improving both the clarity and maintainability of the code.</p>
+        <p>Another common pattern was the use of position: absolute for numerous images. To optimize this, I created a new class, 
+            .position__item--absolute, and applied it to all elements that required this positioning. This approach not only reduced the code duplication 
+            but also made it easier to manage and update these properties across the project.</p>
+
+          <h3>Key Changes for Animation Implementation:</h3>
+          <p>The goal was to animate two boats along different paths in sections five and seven of a webpage, ensuring that the boats move in the correct 
+            direction and sequence. Each boat needed to start from the appropriate position along its path, and the second boat in each section should only 
+            start moving after a delay, fading in smoothly to enhance the visual effect.</p>
+          <p>
+            Implemented distinct animations for each boat using the animateBoat and animateBoatWithFadeIn functions.
+            Ensured that the boats in section five moved in the same direction with staggered starts, while the boats in section seven moved in the reverse 
+            direction with similar staggered starts.
+            I also set the initial position of each boat along its path to ensure they start from the correct location.
+            Used GSAP's getPointAtLength function to position the boats accurately at the start of their respective paths.
+          </p>
+          <h4>Fade-In Effect for the Second Boat:</h4>
+          <p>
+            I created a fade-in effect for the second boat in each section to enhance visual appeal.
+            Used GSAP timelines to combine the fade-in effect with the boat's movement, ensuring a smooth transition from opacity 0 to 1 before starting the animation 
+            along the path.
+          </p>
+          <p>
+            I also reduced the delay for the second boat animation to 1.5 seconds to ensure a shorter wait time before it starts moving.
+           Maintained a fade-in duration of 1 second to provide a quick yet noticeable transition. 
+          </p>
+          <h4>Accessibility and Sustainability:</h4>
+          <p>Since we learned more about reduced motion, I implemented it throughout the project to make the animations more accessible to users with motion sensitivities.
+            I optimized SVGs in the same way as in <a class="assigment__link" href="../pages/assigment_two.html">Assigment 2</a>, reducing file sizes and improving performance.
+          </p>
+          <h4>Credits:</h4>
+          <p>I would like to credit my group members for their contributions to this assigment:</p>
+          <ul>
+            <li>
+                <p>
+                    Marius Sandvik Bjørnstad
+                </p>
+            </li>
+            <li>
+                <p>
+                    Jakub Olszewski
+                </p>
+            </li>
+          </ul>
+          <h4>Live Page & Code</h4>
+          <p>You can view live version of my assigment here: 
+            <a class="assigment__link" href="https://modestat.github.io/third__assigment/">Link to Updated Version</a>.
+          The source code for this project is available on Github: <a class="assigment__link" href="https://github.com/modestat/third__assigment">repository</a>.
+          </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Modesta Trakselyte \ Subject IDG1292</p>
+    </footer>
+</body>
+</html>

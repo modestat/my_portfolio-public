@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#assignments">Assignments</a></li>
+                <li><a href="reflection.html">Reflections</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h2>Assignment 2: CSS & SMIL Animation</h2>
+        <a class="assigment__link" href="https://advancedcss2024.github.io/idg1293-2024-oblig2-group-5/">Link to Original Assigment 2</a>
+        <p>This assignment focused on refining the BEM naming conventions and simplifying the CSS code for better maintainability and responsiveness.
+            The main issues with Assignment 2 included responsiveness, web interactions, more suitable animations, a focus on BEM, and minimizing code 
+            as much as possible. These were the key points I addressed in this updated version.
+        </p>
+        <h3>Main Contributions:</h3>
+        <p>My main contributions to Assignment 2 were building up the entire poster layout and making it responsive.</p>
+        <h4>Main Changes</h4>
+        <p>The changes involved consolidating similar styles to reduce redundancy and improve maintainability. The use of more flexible units like vw ensures better responsiveness. The BEM naming convention was refined to be more consistent and descriptive. For example in the original code there was:
+            '.footer__blue-text', 'footer__blue-link', '.footer__blie-contact' wihch i updated to: '.footer__text', 'footer__link', 'footer__contact'.
+         <p>CSS Drawing Optimization:I used CSS variables to define reusable properties and reduced repetition by creating shared classes for common properties. 
+            Specific classes were extended for unique styles, adhering to BEM naming conventions to ensure clarity and maintainability.
+            <img class="section__image" src="../assets/images/oblig2-css.png" alt="">
+        </p>
+         <p>This approach not only minimizes the CSS code but also improves readability and ease of updates. 
+            Using CSS variables makes it easier to manage color schemes and other common properties across the entire project.</p>
+        
+        <h4>Font Shorthand Property: </h4>
+        <p>The use of the font shorthand property simplifies the code and makes it more readable. This change also helps in maintaining consistency and reducing potential 
+            errors in font declarations.</p>
+        <img class="section__image" src="../assets/images/shorthand_property_changes.png" alt="">
+
+        <h4>Added Interaction:</h4>
+        <p>Adding hover effects and animations enhances user engagement. The bounce effect on the logo provides a visual cue that makes the interface more dynamic 
+            and interactive. Another exmaple of where i implemented web interaction is on the header. 
+            When user hovers with their mouse over header it turns into green color, this makes the uer to take extra attention to what the poster's concept.</p>
+
+        <h4>SVG Styling:</h4>
+        <p> I created an svg_style.css to hold the styles related to SVG drawings, clouds, and eyes. 
+            This separation makes the codebase more manageable in my opinion. 
+            Organizing SVG styles in a separate file reduces clutter in the main CSS file and makes it easier to locate and update SVG-specific styles. </p>
+       <h4>Accessibility and Sustainability:</h4>
+       <p>I ensured that the animations moved slowly to accommodate users with motion sensitivities and made the text responsive to different device screens.
+         I optimized the SVGs by importing them as images and using Adobe's object simplifier to reduce file sizes, thereby minimizing the code length and improving performance.
+       </p>
+       <h4>Credits:</h4>
+       <p>I would Like to credit my group memeber for his contribution to the second assigment:
+        <ul>
+            <li>Håkon Andreas Sæbjørnsen</li>
+        </ul>
+       </p>
+       <p>You can view live version of my assigment here: 
+        <a class="assigment__link" href="https://modestat.github.io/asisgment-second/">Link to Updated Version</a>. 
+        The source code for this project is available on Github: <a class="assigment__link" href="https://github.com/modestat/asisgment-second">repository</a>.
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Modesta Trakselyte \ Subject IDG1292</p>
+    </footer>
+</body>
+</html>
